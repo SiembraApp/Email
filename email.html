@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign In Page</title>
+<style type="text/css">
+  body {
+    Margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+  }
+  table {
+    border-spacing: 0;
+  }
+  td {
+    padding: 0;
+  }
+  img {
+    border: 0;
+  }
+  .wrapper {
+    width: 100%;
+    table-layout: fixed;
+    background-color: #f5f5f5;
+    padding-bottom: 40px;
+  }
+  .webkit {
+    max-width: 600px;
+    background-color: #ffffff;
+  }
+  .outer {
+    Margin: 0 auto;
+    width: 100%;
+    max-width: 600px;
+    border-spacing: 0;
+    font-family: Arial, sans-serif;
+    color: #333333;
+  }
+  @media screen and (max-width: 600px) {
+    .outer {
+      width: 100% !important;
+    }
+    .webkit {
+      width: 100% !important;
+    }
+  }
+  .inner {
+    padding: 10px;
+  }
+  .content-cell {
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: left;
+  }
+  .header {
+    background-color: #C2E0C6;
+    padding: 20px 20px 20px 0; /* Adjusted padding for top-left text */
+    text-align: left; /* Align text to the left */
+    background-size: 110%; /* Increase the size to more than cover */
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+</style>
+</head>
+<body>
+  <center class="wrapper">
+    <!-- Header Table -->
+    <table class="outer" align="center">
+      <tr>
+        <td class="header" background="https://raw.githubusercontent.com/SiembraApp/Email/main/email%20background.png" style="background-size: 110%; background-position: center;">
+          <!--[if gte mso 9]>
+          <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:600px;">
+            <v:fill type="tile" src="https://raw.githubusercontent.com/SiembraApp/Email/main/email%20background.png" color="#C2E0C6" />
+            <v:textbox inset="0,0,0,0">
+          <![endif]-->
+          <div>
+            <h1 style="color: #006C3F; margin: 10; padding: 0px 20px;">Bloom into Your Best Self</h1>
+            <p style="margin: 10; padding: 0px 20px;">Cultivate habits that will transform your life</p>
+            <a href="{{ .ConfirmationURL }}" style="background-color: #D3FAC7; color: #006C3F; padding: 10px 20px; border-radius: 20px; text-decoration: none; font-weight: bold; display: inline-block; margin-top: 20px;">Sign In</a>
+          </div>
+          <!--[if gte mso 9]>
+            </v:textbox>
+          </v:rect>
+          <![endif]-->
+        </td>
+      </tr>
+    </table>
+  </center>
+</body>
+</html>
